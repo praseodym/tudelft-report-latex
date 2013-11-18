@@ -158,7 +158,7 @@
 \definecolor{tudelft-purple}{cmyk}{0.98,1,0,0.35}
 \definecolor{tudelft-turquoise}{cmyk}{0.82,0,0.21,0.08}
 \definecolor{tudelft-sky-blue}{cmyk}{0.45,0,0.06,0.06}
-\definecolor{tudelft-lavendel}{cmyk}{0.45,0.2,0,0.07}
+\definecolor{tudelft-lavender}{cmyk}{0.45,0.2,0,0.07}
 \definecolor{tudelft-orange}{cmyk}{0.02,0.56,0.84,0}
 \definecolor{tudelft-warm-purple}{cmyk}{0.58,1,0,0.02}
 \definecolor{tudelft-fuchsia}{cmyk}{0.19,1,0,0.19}
