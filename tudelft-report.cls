@@ -184,6 +184,8 @@
     \hypersetup{pdftitle=#2}%
 }
 %% Redefine the author command to add the name to the PDF meta data.
+\renewcommand*\and{\\}
+\pdfstringdefDisableCommands{\def\and{and }}
 \renewcommand*\author[1]{%
     \def\@author{#1}%
     \hypersetup{pdfauthor=#1}%
