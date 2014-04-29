@@ -64,14 +64,14 @@
     %% for text. Even if the nativefonts option was specified, we need these
     %% fonts for the cover.
     \newfontfamily\tudrmfamily[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf,
         BoldFont = *-Bold,
         ItalicFont = *-Italic,
         BoldItalicFont = *-BoldItalic
     ]{BookmanOldStyle}
     \newfontfamily\tudsffamily[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf,
         BoldFont = *-Bold,
         ItalicFont = *,
@@ -108,14 +108,14 @@
     %% and Cambria for math.
     \RequirePackage{unicode-math}
     \setmainfont[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf,
         BoldFont = *-Bold,
         ItalicFont = *-Italic,
         BoldItalicFont = *-BoldItalic
     ]{BookmanOldStyle}
     \setsansfont[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf,
         BoldFont = *-Bold,
         ItalicFont = *,
@@ -124,7 +124,7 @@
         BoldItalicFeatures = FakeSlant
     ]{Tahoma}
     \setmonofont[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf,
         UprightFont = *MT,
         BoldFont = *-BoldMT,
@@ -132,7 +132,7 @@
         BoldItalicFont = *-BoldItalicMT
     ]{CourierNewPS}
     \setmathfont[
-        Path = fonts/,
+        Path = style/fonts/,
         Extension = .ttf
     ]{CambriaMath}
     %% The default style for text is Tahoma (sans-serif).
