@@ -1,27 +1,22 @@
 \begin{titlepage}
 
+
 \begin{center}
 
 %% Insert the TU Delft logo at the bottom of the page.
-\begin{tikzpicture}[remember picture,overlay]
-    \node at (current page.south)[anchor=south,inner sep=0pt]{
-        \includegraphics{cover/logo}
-    };
-\end{tikzpicture}
-
-%% Extra whitespace at the top.
-\vspace*{2\bigskipamount}
 
 %% Print the title in cyan.
 {\makeatletter
-\titlestyle\color{tudelft-cyan}\Huge\@title
+\largetitlestyle\fontsize{64}{94}\selectfont\@title
+%\largetitlestyle\color{tudelft-cyan}\Huge\@title
 \makeatother}
 
 %% Print the optional subtitle in black.
 {\makeatletter
 \ifx\@subtitle\undefined\else
     \bigskip
-    \titlefont\titleshape\LARGE\@subtitle
+   {\tudsffamily\fontsize{22}{32}\selectfont\@subtitle}    
+    %\titlefont\titleshape\LARGE\@subtitle
 \fi
 \makeatother}
 
@@ -36,23 +31,15 @@ by
 
 %% Print the name of the author.
 {\makeatletter
-\titlefont\Large\bfseries\@author
+%\largetitlefont\Large\bfseries\@author
+\largetitlestyle\fontsize{26}{26}\selectfont\@author
 \makeatother}
 
-\vfill
-
-in partial fulfillment of the requirements for the degree of
-%in overeenstemming met de vereisten voor het verkrijgen van de graad van
-
 \bigskip
 \bigskip
 
-{\bfseries Master of Science}
-
-in Applied Physics
-
-\bigskip
-\bigskip
+to obtain the degree of Master of Science
+%ter verkrijging van de graad van Master of Science
 
 at the Delft University of Technology,
 %aan de Technische Universiteit Delft,
@@ -63,17 +50,14 @@ to be defended publicly on Tuesday January 1, 2013 at 10:00 AM.
 \vfill
 
 \begin{tabular}{lll}
-%% Add additional information here, per faculty requirements, e.g
-%    Student number: & 1234567 \\
-%    Project duration: & \multicolumn{2}{l}{March 1, 2012 -- January 1, 2013} \\
-    Supervisor: & Prof.\ dr.\ ir.\ A.\ Einstein \\
-    Thesis committee:
-        & Prof.\ dr.\ C.\ F.\ Xavier, & TU Delft \\
+    Student number: & 1234567 \\
+    Project duration: & \multicolumn{2}{l}{March 1, 2012 -- January 1, 2013} \\
+    Thesis committee: & Prof.\ dr.\ ir.\ J.\ Doe, & TU Delft, supervisor \\
         & Dr.\ E.\ L.\ Brown, & TU Delft \\
-        & Ir.\ M.\ Scott, & Acme Corporation
+        & Ir.\ A.\ Aaronson, & Acme Corporation
 \end{tabular}
-
 %% Only include the following lines if confidentiality is applicable.
+
 \bigskip
 \bigskip
 \emph{This thesis is confidential and cannot be made public until December 31, 2013.}
@@ -82,9 +66,18 @@ to be defended publicly on Tuesday January 1, 2013 at 10:00 AM.
 \bigskip
 \bigskip
 An electronic version of this thesis is available at \url{http://repository.tudelft.nl/}.
-%Een elektronische versie van dit verslag is beschikbaar op \url{http://repository.tudelft.nl/}.
+%\\[1cm]
+
+%\centering{\includegraphics{cover/logo_black}}
+
 
 \end{center}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node at (current page.south)[anchor=south,inner sep=0pt]{
+        \includegraphics{cover/logo_black}
+    };
+\end{tikzpicture}
 
 \end{titlepage}
 

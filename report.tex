@@ -1,16 +1,51 @@
-\documentclass{tudelft-report}
-
+\documentclass[whitelogo]{tudelft-report}
+\usepackage{natbib}
+\usepackage{changes}
 \begin{document}
 
 %% Use Roman numerals for the page numbers of the title pages and table of
 %% contents.
 \frontmatter
 
-\title[Optional Subtitle]{Title}
-\author{J.\ Random Author}
+%% Uncomment following 19 lines for a cover with a picture on the lower half only
+%\title[tudelft-white]{Title}
+%\subtitle[tudelft-cyan]{Optional subtitle}
+%\author[tudelft-white]{J.\ Random Author}
+%\affiliation{Technische Universiteit Delft}
+%\coverimage{cover.jpg}
+%\titleoffsetx{10cm}
+%\titleoffsety{10cm}
+%\afiloffsetx{1cm}
+%\afiloffsety{18cm}
+%\covertext[tudelft-white]{
+%    \textbf{Cover Text} \\
+%    possibly \\
+%    spanning 
+%    multiple 
+%    lines
+%    \vfill
+%    ISBN 000-00-0000-000-0
+%}
+%\makecover
+
+%% Uncomment following 16 lines for a cover with a picture on the lower half only
+\title[tudelft-white]{Title}
+\subtitle[tudelft-black]{Optional subtitle}
+\author[tudelft-white]{J.\ Random Author}
 \affiliation{Technische Universiteit Delft}
-\coverimage{cover.jpg}
-\makecover
+\coverimage{tank.jpg}
+\covertext[tudelft-white]{
+    \textbf{Cover Text} \\
+    possibly \\
+    spanning 
+    multiple 
+    lines
+    \vfill
+    ISBN 000-00-0000-000-0
+}
+\setpagecolor{tudelft-cyan}
+\makecover[split]
+
 
 %% Include an optional title page.
 \input{title}
