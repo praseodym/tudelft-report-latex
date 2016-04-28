@@ -454,7 +454,7 @@
                      
                      {\titlefont\color{\@covertextcolor}\fontsize{18}{18}\selectfont\@cover@text}
                    \fi
-             \end{minipage};
+             \end{minipage}
             };
         \else
           \coordinate (tcorner) at ($(top left)+(\@cover@x,-\@cover@y)$);
