@@ -23,28 +23,38 @@
 
 \LoadClass[10pt]{book}
 
+\RequirePackage{ifxetex}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+
 %% English is the default language, but this can be changed to Dutch by
 %% specifying the 'dutch' option to the document class.
-\if@dutch
-    \RequirePackage[dutch]{babel}
+%% Even for English reports, some sections might be in Dutch, for example on
+%% the title page, so also load dutch as alternative language in this case.
+\ifxetex
+    \RequirePackage{polyglossia}
+    \if@dutch
+        \setdefaultlanguage{dutch}
+    \else
+        \setdefaultlanguage{english}
+        \setotherlanguage{dutch}
+    \fi
 \else
-    %% Even for English reports, some sections might be in Dutch, for example on
-    %% the title page.
-    \RequirePackage[dutch,english]{babel}
+    \if@dutch
+        \RequirePackage[dutch]{babel}
+    \else
+        \RequirePackage[dutch,english]{babel}
+    \fi
 \fi
 \RequirePackage[nooneline,footnotesize]{caption}
 \RequirePackage{fancyhdr}
 \RequirePackage[flushmargin,hang]{footmisc}
 \RequirePackage{ifpdf}
-\RequirePackage{ifxetex}
 \ifxetex
-    \RequirePackage[xetex]{geometry}
-    \RequirePackage[xetex]{graphicx}
-    \RequirePackage[xetex]{hyperref}
+    \RequirePackage{geometry}
+    \RequirePackage{graphicx}
+    \RequirePackage{hyperref}
     \RequirePackage{fontspec}
-    \RequirePackage{xltxtra}
     \defaultfontfeatures{Ligatures=TeX}
 \else
     \ifpdf
